@@ -5,8 +5,8 @@ from PIL import ImageFilter, ImageEnhance
 import os
 
 path = os.path.dirname(__file__)
-birds = path + "birds.jpg"
-image = Image.open(birds)
+birds_img = os.path.join(path, "birds.jpg")
+image = Image.open(birds_img)
 
 fig = plt.figure()
 
