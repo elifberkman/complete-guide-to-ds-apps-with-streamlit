@@ -2,8 +2,11 @@ import streamlit as st
 from PIL import Image
 import matplotlib.pyplot as plt
 from PIL import ImageFilter, ImageEnhance
+import os
 
-image = Image.open("birds.jpg")
+path = os.path.dirname(__file__)
+birds = path + "birds.jpg"
+image = Image.open(birds)
 
 fig = plt.figure()
 
